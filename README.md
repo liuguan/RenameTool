@@ -1,2 +1,2 @@
 # hello-world
-just a fun.
+这是一个测试。
