@@ -1,0 +1,23 @@
+=begin
+批量重命名工具
+2017年9月24日创建
+Dir.getwd # 获取完整目录
+Time.now.to_s.match(/(^[^\s]*)\s/)[1]  # 获取日期如”2017-9-24”
+Dir.getwd.match(/[^\/]*$/)[0] #获取当前目录
+=end
+
+#第一步，设定新名称
+t = "afra01"
+#第二步，文件类型筛选
+z = "*.jpg"
+#第三步，设定命名格式
+n = "%s_%03d.jpg"
+
+file = Dir.glob(z).sort!
+i=1
+file.each do |f|
+	new_name = n % [t, i]
+	puts "%s > %s" % [f, new_name]
+	File.rename(f, new_name)
+	i+=1	
+end
