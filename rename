@@ -1,6 +1,7 @@
 =begin
 批量重命名工具
 2017年9月24日创建
+2018-7-2 update
 Dir.getwd # 获取完整目录
 Time.now.to_s.match(/(^[^\s]*)\s/)[1]  # 获取日期如”2017-9-24”
 Dir.getwd.match(/[^\/]*$/)[0] #获取当前目录
