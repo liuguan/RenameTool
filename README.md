@@ -2,3 +2,4 @@
 simple ruby rename tool
 
 hello-world
+rails
